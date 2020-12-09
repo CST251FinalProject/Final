@@ -10,6 +10,10 @@ nav{
 
 }
 
+main{
+  
+}
+
 .images{
 
 }
@@ -23,6 +27,8 @@ nav{
 }
 
 #info{
+  float: right;
+  display: flex;
 
 }
 
@@ -32,6 +38,7 @@ nav{
   border-top: 1px solid #c9b63a;
   font-family: 'Montserrat', sans-serif;
   font-size: 12pt;
+  color: black;
 
 }
 

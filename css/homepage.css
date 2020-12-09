@@ -16,9 +16,10 @@ nav{
   font-size: 14px;
   font-variant: small-caps;
   text-align: left;
+}
 
-
-
+nav a{
+  color: white;
 }
 
 main{
@@ -31,19 +32,46 @@ main{
 }
 
 .images{
-
+  display: grid;
+  width: 400px;
+  height: 400px;
 }
 
 .images img{
   width: 100%;
-  height
+  height: 100%;
+  box-shadow: 6px 6px 6px black;
 }
 
-.images img:hover{
-
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  background-color: black;
 }
 
-#info{
+.images img:hover .overlay{
+  opacity: 1;
+}
+
+.text{
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+aside{
   float: right;
   display: grid;
   object-fit: contain;
@@ -57,7 +85,7 @@ main{
 
 }
 
-#stuff{
+footer{
   background: transparent;
   padding: 50px 0;
   display: grid;

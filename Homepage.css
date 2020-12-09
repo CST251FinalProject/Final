@@ -1,5 +1,5 @@
 body{
-
+width: 1100px;
 }
 
 nav{
@@ -19,7 +19,9 @@ nav{
 }
 
 #stuff{
-
+background: transparent;
+padding: 50px;
+border-top: 1px solid #eaeaea;
 }
 
 /*

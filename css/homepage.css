@@ -2,8 +2,6 @@ body{
   background-color: #7699c2;
   color: #fff;
   font-size: 30px;
-  padding: 0px;
-  opacity: 1;
 }
 
 nav{
@@ -24,9 +22,8 @@ nav a{
 }
 
 main{
-  background-color: transparent;
   display: grid;
-  grid-template-columns: 25%, 25%, 25%, 25%;
+  grid-template-columns: 25%;
   grid-gap: 10px;
   width: auto;
   height: auto;
@@ -44,37 +41,10 @@ main{
   box-shadow: 6px 6px 6px black;
 }
 
-.overlay{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  transition: .5s ease;
-  background-color: black;
-}
 
-.images img:hover .overlay{
-  opacity: 1;
-}
-
-.text{
-  color: white;
-  font-size: 16px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-aside{
-  float: right;
+#info{
   display: grid;
+  float: right;
   object-fit: contain;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
@@ -86,13 +56,19 @@ aside{
 
 }
 
-footer{
+#footer{
   background: transparent;
-  padding: 50px 0;
+  padding: 10px;
   display: grid;
-  border-top: 1px solid #c9b63a;
+  border: 5px solid #c9b63a;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   color: black;
 
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
 }

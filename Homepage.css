@@ -1,5 +1,10 @@
 body{
-width: 1100px;
+  background-color: blue;
+  color: #fff;
+  font-size: 30px;
+  padding: 0px;
+  opacity: 1;
+
 }
 
 nav{
@@ -14,14 +19,18 @@ nav{
 
 }
 
+.images img:hover{
+
+}
+
 #info{
 
 }
 
 #stuff{
-background: transparent;
-padding: 50px;
-border-top: 1px solid #eaeaea;
+  background: transparent;
+  padding: 50px 0;
+  border-top: 1px solid #eaeaea;
 }
 
 /*

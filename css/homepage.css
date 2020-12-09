@@ -1,44 +1,95 @@
+*, *::after, *::before{
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+}
+
 body{
   background-color: #7699c2;
   color: #fff;
-  font-size: 30px;
 }
 
-nav{
-  width: 100%;
-  position: sticky;
-  display: grid;
-  border: solid 3px #c9b63a;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   background-color: transparent;
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-variant: small-caps;
-  text-align: left;
+  border: solid 3px #c9b63a;
+  position: sticky;
+  top:0;
 }
 
-nav a{
+li {
+  float: left;
+}
+
+li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
-main{
-  display: grid;
-  grid-template-columns: 25%;
-  grid-gap: 10px;
-  width: auto;
+li a:hover:not(.active) {
+  background-color: #376599;
+}
+
+.active {
+  background-color: #c9b63a;
+}
+
+.container{
+  width: 60%;
+  margin: 2rem;
   height: auto;
 }
 
-.images{
+.gallery{
   display: grid;
-  width: 400px;
-  height: 400px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 5vw);
+  grid-gap: .5rem;
 }
 
-.images img{
-  width: 100%;
-  height: 100%;
-  box-shadow: 6px 6px 6px black;
+.gallery__img{
+  width:400px;
+  height:200px;
+  object-fit:contain;
+  display: block;
+}
+
+.gallery__item--1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gallery__item--3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.gallery__item--4 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
 }
 
 
@@ -46,8 +97,9 @@ main{
   display: grid;
   float: right;
   object-fit: contain;
+  width: 25%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-variant: small-caps;
   color: white;
   text-align: center;
@@ -58,17 +110,21 @@ main{
 
 #footer{
   background: transparent;
-  padding: 10px;
   display: grid;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  width: 100%;
   border: 5px solid #c9b63a;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: black;
 
 }
 
 h1{
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
 }

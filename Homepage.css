@@ -17,8 +17,12 @@ main{
   position: sticky;
   display: grid;
   border: solid 3px #c9b63a;
+  background-color: transparent;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  font-variant: small-caps;
+  text-align: left;
+
 
 
 }
@@ -57,7 +61,15 @@ main{
 
 #info{
   float: right;
-  display: flex;
+  display: grid;
+  object-fit: contain;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-variant: small-caps;
+  color: white;
+  text-align: center;
+  border: solid 3px white;
+  background-color: transparent;
 
 }
 

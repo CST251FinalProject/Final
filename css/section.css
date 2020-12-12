@@ -1,0 +1,137 @@
+*, *::after, *::before{
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #c9b63a;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  border: solid 4px #7699c2;
+  position: sticky;
+  top:0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #376599;
+}
+
+.active {
+  background-color: #c9b63a;
+}
+
+.container{
+  width: 60%;
+  margin: 2rem;
+  height: auto;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 5vw);
+  grid-gap: .5rem;
+}
+
+.gallery__img{
+  width:400px;
+  height:200px;
+  object-fit:contain;
+  display: block;
+}
+
+.gallery__item--1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gallery__item--3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.gallery__item--4 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+
+#info{
+  display: inline;
+  float: right;
+  object-fit: contain;
+  width: 25%;
+  top: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+  border: solid 3px white;
+  background-color: transparent;
+
+}
+
+#footer{
+  background: transparent;
+  display: grid;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  border: 5px solid #c9b63a;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: white;
+
+}
+
+#main{
+  margin-top: 200px;
+  font-size: 18px;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: white;
+}

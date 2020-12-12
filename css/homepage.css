@@ -52,44 +52,44 @@ li a:hover:not(.active) {
 
 .gallery{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 5vw);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 6vw);
   grid-gap: .5rem;
 }
 
 .gallery__img{
-  width:400px;
-  height:200px;
+  width: 600px;
+  height: 400px;
   object-fit:contain;
   display: block;
 }
 
 .gallery__item--1{
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 3;
 }
 
 .gallery__item--2 {
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-start: 5;
+  grid-column-end: 8;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 3;
 }
 
 .gallery__item--3 {
   grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 8;
 }
 
 .gallery__item--4 {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 5;
+  grid-row-end: 8;
 }
 
 
@@ -97,7 +97,7 @@ li a:hover:not(.active) {
   display: inline;
   float: right;
   object-fit: contain;
-  width: 25%;
+  width: 15%;
   top: 0;
   padding-right: 10px;
   padding-left: 10px;
@@ -111,17 +111,16 @@ li a:hover:not(.active) {
 }
 
 #footer{
-  background: transparent;
+  background: #c9b63a;
   display: grid;
   position: fixed;
   margin: 0;
-  padding: 0;
+  padding-left: 20px;
   bottom: 0;
   width: 100%;
-  border: 5px solid #c9b63a;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  color: white;
+  color: #376599;
 
 }
 

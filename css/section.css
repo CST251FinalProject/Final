@@ -53,14 +53,15 @@ li a:hover:not(.active) {
 
 .gallery{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 5vw);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 8vw);
   grid-gap: .5rem;
 }
 
 .gallery__img{
-  width:400px;
-  height:200px;
+  width:600px;
+  height:400px;
+  padding-left: 30px;
   object-fit:contain;
   display: block;
 }
@@ -93,34 +94,14 @@ li a:hover:not(.active) {
   grid-row-end: 5;
 }
 
-
-#info{
-  display: inline;
-  float: right;
-  object-fit: contain;
-  width: 25%;
-  top: 0;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: black;
-  text-align: left;
-  border: solid 3px white;
-  background-color: transparent;
-
-}
-
 #footer{
-  background: transparent;
+  background: #c9b63a;
   display: grid;
   position: fixed;
   margin: 0;
   padding: 0;
   bottom: 0;
   width: 100%;
-  border: 5px solid #c9b63a;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: white;
@@ -129,9 +110,8 @@ li a:hover:not(.active) {
 
 #main{
   margin-top: 200px;
-  font-size: 18px;
   padding-right: 10px;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-top: 10px;
   font-size: 16px;
   color: black;
@@ -141,4 +121,11 @@ h1{
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   color: white;
+  padding-left: 20px;
+}
+
+p{
+  font-size: 16px;
+  color: black;
+  padding-left: 20px;
 }

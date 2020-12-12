@@ -8,8 +8,9 @@ html{
 }
 
 body{
-  background-color: #c9b63a;
-  color: #fff;
+  background-color: #C6CCCC;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -19,7 +20,7 @@ ul {
   overflow: hidden;
   background-color: transparent;
   font-family: 'Montserrat', sans-serif;
-  border: solid 4px #7699c2;
+  border: solid 3px #7699c2;
   position: sticky;
   top:0;
 }
@@ -101,9 +102,10 @@ li a:hover:not(.active) {
   top: 0;
   padding-right: 10px;
   padding-left: 10px;
+  padding-top: 10px;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  color: white;
+  color: black;
   text-align: left;
   border: solid 3px white;
   background-color: transparent;
@@ -128,6 +130,11 @@ li a:hover:not(.active) {
 #main{
   margin-top: 200px;
   font-size: 18px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 16px;
+  color: black;
 }
 
 h1{

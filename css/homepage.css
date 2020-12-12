@@ -60,7 +60,7 @@ li a:hover:not(.active) {
 .gallery__img{
   width: 600px;
   height: 400px;
-  object-fit:contain;
+  object-fit: contain;
   display: block;
 }
 
@@ -92,6 +92,30 @@ li a:hover:not(.active) {
   grid-row-end: 8;
 }
 
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.gallery__img:hover .overlay {
+  opacity: 1;
+}
+
+figcaption{
+  font-size: 14px;
+  color: white;
+}
 
 #info{
   display: inline;

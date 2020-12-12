@@ -115,6 +115,7 @@ li a:hover:not(.active) {
 figcaption{
   font-size: 14px;
   color: white;
+  text-decoration: none;
 }
 
 #info{
